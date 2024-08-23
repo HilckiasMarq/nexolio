@@ -1,7 +1,6 @@
 *{
     scroll-behavior: smooth;
 }
-
 body{
     background-image: url(Nexolio\ Background.jpg);
     background-attachment: fixed;
@@ -30,11 +29,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
     border: 3px solid rgb(0, 0, 0);
-  }  
+}  
 fieldset{
     padding: 18px;
     align-items: center;
-    width: 75%;
+    width: 50%;
     border: 0;
     border-radius: 10px;
     background-color: white;
