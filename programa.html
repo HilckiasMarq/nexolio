@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Lovelace</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        scrollbar-color: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: justify;
+        color: #2f2938;
+        background-color: #f0f0f0;
+
+    }
+    ::selection{
+        color: white;
+        background-color: #2f2938;
+    }
+    .decor{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #28262b;
+        transition: color 0.5s, background-color 0.5s;
+    }
+    .decor:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    button, input{
+        border-radius: 30px;
+        transition: background-color 0.3s, transform 0.3s;
+        padding: 10px;
+    }
+        button:hover, input:hover{
+        background-color: lightgray;
+        transform: scale(0.9);
+    }
+    fieldset{
+        padding: 10px;
+        align-items: center;
+        width: 50%;
+        border: 0;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(198, 198, 198);
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+        align-items: center;
+    }
+    img{
+        transition: transform 0.3s;
+    }
+    img:hover{
+        transform: scale(0.9);
+    }
+    footer, header{
+        background-color: #28262b;
+        padding: 10px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+   <fieldset>
+      <section>
+        <h1>Triângulo Congruente, representação de cálculo um pouco complexo feito por computador</h1>
+        <img width="380" src="triangulo.png" />
+        <br /><br />
+       <h1 id="resp">
+           ...
+       </h1>
+        <p>
+           Primeiro digite o valor do cateto A e depois o valor do cateto B.
+        </p>
+        <div>
+           <input type="number" placeholder="Valor do cateto A" id="a" name="" value ="" />
+        <input type="number" placeholder="Valor do cateto B" id="b" name="" value ="" />
+        </div>
+        
+
+       <p>
+          Digite o valor da hipotenusa, depois é só ter certeza da congruência clicando em "Verificar". 
+       </p>
+       
+        <input type="number" placeholder="Valor da Hipotenusa" id="h" name="" value ="" />
+        <br /> <br />
+        <button onclick="verificar()">Verificar</button>
+        
+        
+        
+    </section>
+    <section>
+       <br><br><br><br><br>
+       <h1>Teorema de Pitágoras</h1>
+        <p>
+           Você conhece o teorema de Pitágoras? Esse teorema é muito conhecido pela sua fórmula, que diz que o quadrado<br> da hipotenusa é igual à soma dos quadrados dos catetos; A² + B² = C². Com esta fórmula, conseguimos fazer esse programinha <br> que verifica se um triângulo é congruente ou não.
+        </p>
+        
+    </section>
+    <footer></footer>
+    
+   </fieldset>
+    
+</body>
+<script>
+   function verificar(){
+      var a = document.getElementById("a");
+      var b = document.getElementById("b");
+      var h = document.getElementById("h");
+      var a1 = parseInt(a.value);
+      var b1 = parseInt(b.value);
+      var h1 = parseInt(h.value);
+      if (h1*h1 == a1*a1 + b1*b1){
+         document.getElementById("resp").innerHTML = "É congruente.";
+      }
+      else{
+         document.getElementById("resp").innerHTML = "Não é congruente. " + a.value + " cm, " + b.value + " cm e " + h.value + " cm não podem formar um triângulo.";
+      }
+   }
+</script>
+</html>
