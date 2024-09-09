@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Lovelace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            scrollbar-color: white;
+            overflow-y: auto;
+            overflow-x: hidden;
+            text-align: justify;
+            color: #2f2938;
+            background-color: #f0f0f0;
+
+        }
+        ::selection{
+            color: white;
+            background-color: #2f2938;
+        }
+        .decor{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #28262b;
+            transition: color 0.5s, background-color 0.5s;
+        }
+        .decor:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+        button, input{
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 10px;
+        }
+        button:hover, input:hover{
+            background-color: lightgray;
+            transform: scale(0.9);
+        }
+        fieldset{
+            padding: 10px;
+            align-items: center;
+            width: 50%;
+            border: 0;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgb(198, 198, 198);
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+            align-items: center;
+        }
+        img{
+            transition: transform 0.3s;
+        }
+            img:hover{
+            transform: scale(0.9);
+        }
+        footer, header{
+            background-color: #28262b;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <fieldset>
+        
+        <br>
+        <h1>Ada Lovelace — A mãe da programação</h1>
+        <br />
+        <header></header>
+        <br>
+        
+        <section>
+            <h2>Biografia</h2>
+            <p>Ada Lovelace foi uma matemática e escritora inglesa. Nascida em Londres, Inglaterra, no ano de 1815, foi a primeira pessoa a escrever um algoritmo para ser processado por uma máquina na história da computação.</p>
+      <img width="200" src="ada.jpeg" /> <img width="300" src="programa.jpeg" />  <br><br><br><br>
+    
+        <section>
+            <h2>Utilidade e Demonstração</h2>
+            <p>
+               Com ajuda de Charles Babbage, que acabara de desenvolver o primeiro computador, criou um programa que servia como uma calculadora mais eficiente e mais complexa, focando principalmente nos números de Bernoulli, mas podendo resolver funções e operações avançadas. <a class="decor" href="/programa.html"> ‎ ‎ Clique aqui ‎ ‎</a> para entender um pouco melhor com demonstrações atuais e entender como são coisas úteis e compensatórias.
+            </p>
+            <p>
+                É notável como sua criação pode ajudar a resolver problemas que são chatinhos e que levam um certo tempo se resolvidos manualmente, ou até mesmo impossíveis. A evolução de suas ideias já é notada com a mobilidde em que estão aplicadas. Atualmente não é mais necessário ter um mega computador, com seu celular já podemos utilizar esses métodos.<br><br>
+            </p><img width=380" src="folha.png" /> 
+        </section>
+        <section>
+            <br><br><br><br><h2>Conclusão</h2>
+            <p>
+                Ada Lovelace foi uma das pessoas mais importantes da história da ciência da computação, possibitando diversas inovações e descobertas cientifícas. Ela conseguiu enxergar potencial em algo que parecia inútil, mostrando como aquilo poderia resumir o tempo gasto em cálculos e avançando gradativamente descobertas deslumbrantes.
+            </p><br><br><br><br><br><br><br><br>
+        </section>
+        <footer>
+            <p>
+                <br>
+                <a class="decor" href="https://resh.com.br/blog/ada-lovelace-primeira-pessoa-a-criar-um-programa-de-computador/">Resh</a>
+                <a class="decor" href="https://institucional.hurb.com/artigos/ada-lovelace-a-primeira-programadora-da-historia">Hurb</a><br>
+                <a class="decor" href="https://horizontes.sbc.org.br/index.php/2017/01/ada-lovelace-e-o-primeiro-programa-de-computador/">Horizontes SBC</a>
+                <a class="decor" href="https://youtu.be/3gGgj8DHncc?si=-0i-wWQISS6LUM2W">Nerd Geek Box</a><br>
+                <br>
+            </p>
+        </footer>
+    </fieldset>
+</body>
+<script src="script.js"></script>
+</html>
